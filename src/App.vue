@@ -35,6 +35,8 @@ export default {
     fetch('https://ghibliapi.herokuapp.com/films')
     .then(res => res.json())
     .then(films => this.films = films)
+    .catch(error => console.log(error));
+
     
     eventBus.$on('film-selected', (film) => {
       this.selectedFilm = film
