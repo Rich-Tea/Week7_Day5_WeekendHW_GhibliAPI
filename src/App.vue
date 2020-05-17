@@ -1,10 +1,12 @@
 <template>
+<div>
+  <h1>Ghibli Time!</h1>
   <div class="main-container">
-    <h1>Ghibli Taimu</h1>
     <film-list :films='films'></film-list>
-    <film-detail :film='films'></film-detail>
+    <film-detail :film='selectedFilm'></film-detail>
    
    
+  </div>
   </div>
 </template>
 
@@ -34,11 +36,29 @@ export default {
     .then(res => res.json())
     .then(films => this.films = films)
     
+    eventBus.$on('film-selected', (film) => {
+      this.selectedFilm = film
+    })
     
   }
 }
 </script>
 
 <style>
+/* .main-container {
+    display: flex;
+    justify-content: space-between;
+} */
 
+body {
+  background-color: midnightblue;
+}
+
+h1, ul, li {
+  color: goldenrod;
+}
+
+.detail-div {
+  color: goldenrod;
+}
 </style>
