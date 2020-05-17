@@ -1,12 +1,10 @@
 <template>
   <div class='detail-div' v-if='film'>
-      <p>
-          Title: {{ film.title }}
-          Director: {{ film.director }} <br>
-          Release date: {{ film.release_date }} <br>
-          Description: {{ film.description }} <br>
-          Rotten Tomatoes score: {{ film.rt_score }}
-        </p>
+      <h2> {{ film.title }}</h2> 
+         <h3> Director: {{ film.director }}</h3>
+         <h3>Release date: {{ film.release_date }} </h3> 
+         <h3>Description: {{ film.description }} </h3> 
+        <h3> Rotten Tomatoes score: {{ film.rt_score }} </h3>
      </div>
 </template>
 

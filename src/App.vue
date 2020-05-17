@@ -45,17 +45,31 @@ export default {
 </script>
 
 <style>
-/* .main-container {
-    display: flex;
-    justify-content: space-between;
-} */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ 
+}
 
 body {
   background-color: midnightblue;
+  border: 10px;
 }
 
-h1, ul, li {
+h1 {
   color: goldenrod;
+  text-align: center;
+  font-size: 3em;
+}
+
+ul, li {
+  color: goldenrod;
+  font-weight: bold;
 }
 
 .detail-div {
