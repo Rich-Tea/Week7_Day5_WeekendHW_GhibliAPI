@@ -67,14 +67,19 @@ h1 {
   color: goldenrod;
   text-align: center;
   font-size: 3em;
+  font-family: Marker Felt, fantasy;
 }
 
 ul, li {
   color: goldenrod;
   font-weight: bold;
+  font-size: 20px;
+  font-family: Marker Felt, fantasy;
 }
 
 .detail-div {
   color: goldenrod;
+  font-family: Marker Felt, fantasy;
+   font-weight: bold;
 }
 </style>
