@@ -2,10 +2,10 @@
   <div>
       <ul>
         <li v-for="(film, index) in film" :film="film" :key="index">
-          {{ film.director }} <br>
-          {{ film.release_date }} <br>
-          {{ film.description }} <br>
-          {{ film.rt_score }}
+          Director: {{ film.director }} <br>
+          Release date: {{ film.release_date }} <br>
+          Description: {{ film.description }} <br>
+          Rotten Tomatoes score: {{ film.rt_score }}
         </li>
       </ul>
       
